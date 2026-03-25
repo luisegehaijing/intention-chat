@@ -37,8 +37,8 @@ export default function HomePage() {
         <Card className="p-6">
           <h2 className="text-lg font-serif sm:text-2xl">Weekly rhythm</h2>
           <ul className="mt-4 space-y-3 text-sm text-moss">
-            <li><strong className="text-ink">Monday:</strong> setup closes</li>
-            <li><strong className="text-ink">Tuesday night:</strong> matches and emails</li>
+            <li><strong className="text-ink">Tuesday 11:59 PM:</strong> setup closes</li>
+            <li><strong className="text-ink">Late Tuesday / early Wednesday:</strong> matches and emails</li>
             <li><strong className="text-ink">Thu-Fri-Sat:</strong> conversations happen</li>
             <li><strong className="text-ink">After meeting:</strong> feedback + next-week intentions</li>
           </ul>

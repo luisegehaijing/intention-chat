@@ -136,7 +136,7 @@ export default function StatusPage() {
             <>
               <h2 className="text-base font-serif sm:text-xl">Waiting for matching</h2>
               <p className="text-sm">Matching runs on {new Date(data.matchingRunISO).toLocaleString()}.</p>
-              <p className="text-sm text-moss">You can still view and edit setup until Monday deadline.</p>
+              <p className="text-sm text-moss">You can still view and edit setup until Tuesday 11:59 PM.</p>
               <a href="/setup" className="inline-flex items-center rounded-full border border-moss/40 px-4 py-2 text-sm">View Setup</a>
             </>
           ) : null}

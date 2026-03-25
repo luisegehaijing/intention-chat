@@ -19,11 +19,12 @@ function formatCycleKey(date: Date): string {
 export function getCurrentCycleInfo(now = new Date()) {
   const monday = mondayStart(now);
   const setupDeadline = new Date(monday);
+  setupDeadline.setDate(monday.getDate() + 1);
   setupDeadline.setHours(23, 59, 0, 0);
 
   const tuesdayNightRun = new Date(monday);
-  tuesdayNightRun.setDate(monday.getDate() + 1);
-  tuesdayNightRun.setHours(21, 0, 0, 0);
+  tuesdayNightRun.setDate(monday.getDate() + 2);
+  tuesdayNightRun.setHours(0, 15, 0, 0);
 
   const meetingWindowStart = new Date(monday);
   meetingWindowStart.setDate(monday.getDate() + 3);

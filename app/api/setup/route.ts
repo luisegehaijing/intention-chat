@@ -75,7 +75,7 @@ export async function POST(req: Request) {
     const { cycleKey, setupDeadlineISO } = getCurrentCycleInfo();
 
     if (new Date() > new Date(setupDeadlineISO)) {
-      return NextResponse.json({ error: "Weekly setup is locked after Monday." }, { status: 403 });
+      return NextResponse.json({ error: "Weekly setup is locked after Tuesday 11:59 PM." }, { status: 403 });
     }
 
     const supabase = getSupabaseAdmin();

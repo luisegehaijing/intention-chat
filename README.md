@@ -6,15 +6,15 @@ Minimal one-campus pilot app for weekly matched conversations.
 - User pages:
   - `/` (welcome + mechanism)
   - `/auth` (register/login)
-  - `/setup` (weekly setup, editable until Monday)
+  - `/setup` (weekly setup, editable until Tuesday 11:59 PM)
   - `/status` (this week only: status + meeting + feedback)
   - `/history` (match history + personal discussion-entry history)
 - Admin page:
   - `/admin`
 
 ## Weekly timeline
-- Monday: setup closes
-- Tuesday night: matching run + notifications
+- Tuesday 11:59 PM: setup closes
+- Late Tuesday / early Wednesday: matching run + notifications
 - Thu/Fri/Sat: meetings
 - Post-meeting: feedback + optional new prompt proposals
 
@@ -53,7 +53,7 @@ npm run dev
 ## 4) Use the app
 - Students:
   - create account / login at `/auth`
-  - submit/edit setup at `/setup` (until Monday)
+  - submit/edit setup at `/setup` (until Tuesday 11:59 PM)
   - check this week and submit feedback at `/status`
   - check match/discussion history at `/history`
 - Founder:
@@ -81,7 +81,7 @@ npm run dev
 3. Add all env vars in project settings.
 4. Deploy.
 
-## Optional scheduled matching (Tuesday night)
+## Optional scheduled matching (late Tuesday / early Wednesday)
 - Configure cron to `POST /api/admin/run-matching` with header:
   - `Authorization: Bearer <CRON_SECRET>`
 

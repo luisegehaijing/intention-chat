@@ -87,7 +87,7 @@ export default function SetupPage() {
     setMessage("");
 
     if (!setupData?.canEdit) {
-      return setError("Setup is locked after Monday.");
+      return setError("Setup is locked after Tuesday 11:59 PM.");
     }
     if (availability.length === 0) return setError("Choose at least one meeting slot.");
     if (!discussionEntryOne.trim()) return setError("Please add your first discussion entry.");
@@ -132,7 +132,7 @@ export default function SetupPage() {
     <div className="space-y-6">
       <Card className="p-6">
         <h1 className="text-lg font-serif leading-tight sm:text-3xl">Synchria Weekly Setup</h1>
-        <p className="mt-2 text-sm text-moss">You can edit this form until Monday deadline.</p>
+        <p className="mt-2 text-sm text-moss">You can edit this form until Tuesday 11:59 PM.</p>
         {setupData ? (
           <div className="mt-4 rounded-xl border border-moss/30 bg-paper p-4 text-sm">
             <p><strong>Cycle:</strong> {setupData.cycleKey}</p>
